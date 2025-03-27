@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/01b0fb89a9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar  shadow-sm flex justify-between items-center p-5">
+            <a class="btn btn-ghost text-xl">English <img src="assets/logo.png" alt=""> জানালা</a>
+            <div class="flex gap-5">
+                <button class="btn btn-outline btn-primary"><img src="assets/fa-circle-question.png" alt="">Faq</button>
+
+                <button class="btn btn-outline btn-primary"> <img src="assets/fa-book-open.png" alt="">Learn</button>
+
+                <button class="btn btn-outline btn-primary"><img src="assets/fa-arrow-right-from-bracket.png" alt=""> Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto">
+        <!-- banner section start  -->
+        <section>
+            <div class="flex justify-between items-center">
+                <div class="space-y-10">
+                    <h2 class="text-3xl font-bold"><span class="text-[#00BCFF] text-3xl">English</span> is Easy !!
+                    </h2>
+                    <p class="text-2xl text-gray-500">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা <br> আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে <br> যাবে অন্য একটি Level এ</p>
+                    <div class="flex flex-col gap-5">
+                        <input type="text" placeholder="Enter Your name " class="input" />
+                    <input type="password" placeholder="Enter Password" class="input" />
+                    <div>
+                        <button class="btn btn-primary font-bold text-md p-3 mt-5">Get Started </button>
+                    </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <img class="w-[600px]" src="assets/hero-student.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- banner section end  -->
+
+        <!-- accordion section start -->
+        <section class="container mx-auto mt-40">
+            <h2 class="text-5xl font-bold text-center"><span class="text-[#00BCFF]">Frequently</span> Asked Questions</h2>
+            <div class="mt-20 mb-20 flex flex-col gap-6">
+                <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-3" checked="checked" />
+                    <div class="collapse-title font-semibold text-2xl">1. How can I start learning English on this website?</div>
+                    <div class="collapse-content text-xl">You can start by exploring our beginner lessons, interactive exercises, and quizzes. We also offer structured courses to guide you step by step.</div>
+                  </div>
+                  <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title font-semibold text-2xl">2. Is this website free to use?</div>
+                    <div class="collapse-content text-xl">There are some free features on this website which are free. But the core features do require subscription</div>
+                  </div>
+                  <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title font-semibold text-2xl">3.  Do I need to create an account?</div>
+                    <div class="collapse-content text-xl">Yes you have to create an account.</div>
+                  </div>
+                  <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title font-semibold text-2xl">4. How can I build my English vocabulary?</div>
+                    <div class="collapse-content text-xl"> Read Regularly,  Use a Vocabulary Notebook , Watch English Content ,  Use Language Apps.</div>
+                  </div>
+                  
+                  <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title font-semibold text-2xl">5. Do you offer certificates for completed courses?</div>
+                    <div class="collapse-content text-xl">We offer certificate for the every course. But to acquire the certificate you have to complete the whole course within the given time.</div>
+                  </div>
+            </div>
+        </section>
+        <!-- accordion section end -->
+
+        <!-- lesson section start -->
+        <section class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center"><span class="text-[#00BCFF]">Let's </span>Learn Vocabularies</h2>
+            <div class="flex justify-center mt-10 space-x-5" id="lesson-container">
+                
+                
+            </div>
+
+            <!-- lesson cards  -->
+            <div id="lesson_card_container" class="grid grid-cols-3 mb-64">
+            
+                <div class="flex flex-col justify-center items-center col-span-3 mt-20 shadow-xl py-40">
+                    <p class="font-bold text-gray-400">আপনি এখনো কোন Lesson Select করেন ন</p>
+                    <h2 class="text-5xl mt-5">একটি Lesson Select করুন।</h2>
+                </div>
+        </div>
+            <!-- lesson cards end -->
+        </section>
+        <!-- lesson section start -->
+    </main>
+
+
+    <footer class=" flex justify-between items-center p-24 border-t-2">
+        <div class="space-y-5">
+            <a class="btn btn-ghost text-xl text-left font-bold"><h2 class="flex text-left text-2xl">English <img src="assets/logo.png" alt=""> জানালা</h2></a>
+            <div class="mx-4">
+            <h2 class="font-bold text-xl">ইংরেজি শিখুন সহজে</h2>
+            <p class="text-lg">Providing ED-Tech Applications since 2025</p>
+            </div>
+        </div>
+        <div>
+            <h2 class="text-gray-400 mb-4 font-bold">Follow us on</h2>
+            <div class="flex gap-5">
+                <img src="assets/fb-thumb.png" alt="">
+                <img src="assets/instagram-thumb.png" alt="">
+                <img src="assets/youtube-thumb.png" alt="">
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script/script.js"></script>
+
+
+
+
+
+    <!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
+<dialog id="card_details" class="modal">
+  <div class="modal-box">
+    <div id="details_container">
+      
+    </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+</body>
+
+</html>
